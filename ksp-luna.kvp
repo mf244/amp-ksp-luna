@@ -79,9 +79,9 @@ Meta.DisplayImageSource=url:
 
 App.RootDir=./
 App.BaseDirectory=./ksp-luna/serverfiles/
-App.WorkingDir=serverfiles
-App.ExecutableWin=serverfiles\Server.exe
-App.ExecutableLinux=serverfiles/Server
+App.WorkingDir=serverfiles/LMPServer
+App.ExecutableWin=serverfiles\LMPServer\Server.exe
+App.ExecutableLinux=serverfiles/LMPServer/Server
 App.LinuxCommandLineArgs=
 App.Ports=@IncludeJson[ksp-lunaports.json]
 App.UpdateSources=@IncludeJson[ksp-lunaupdates.json]
