@@ -16,7 +16,7 @@
     "UpdateSource": "ExtractArchive",
     "UpdateSourceData": "./LunaMultiplayer-Server-linux-x64-Release.zip",
     "UpdateSourceArgs": "",
-    "UpdateSourceTarget": "./ksp-luna/serverfiles/",
+    "UpdateSourceTarget": "./serverfiles/",
     "UnzipUpdateSource": false,
     "OverwriteExistingFiles": true,
     "DeleteAfterExtract": true,
