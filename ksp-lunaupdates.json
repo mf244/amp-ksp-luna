@@ -8,5 +8,12 @@
     "OverwriteExistingFiles": true,
     "DeleteAfterExtract": true,
     "OneShot": true
+  },
+  {
+    "UpdateStageName": "MakeExecutable",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Command",
+    "UpdateSourceArgs": "chmod +x LMPServer/Server",
+    "OneShot": true
   }
 ]
