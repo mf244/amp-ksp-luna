@@ -4,9 +4,33 @@
     "UpdateSourcePlatform": "Linux",
     "UpdateSource": "FetchURL",
     "UpdateSourceData": "https://github.com/LunaMultiplayer/LunaMultiplayer/releases/download/0.29.0-Draft/LunaMultiplayer-Server-linux-x64-Release.zip",
-    "UnzipUpdateSource": true,
+    "UnzipUpdateSource": false,
+    "OverwriteExistingFiles": true,
+    "DeleteAfterExtract": false,
+    "OneShot": true
+  },
+  {
+    "UpdateStageName": "Extract",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "ExtractArchive",
+    "UpdateSourceArgs": "./LunaMultiplayer-Server-linux-x64-Release.zip",
+    "UpdateSourceTarget": "./ksp-luna/serverfiles/",
     "OverwriteExistingFiles": true,
     "DeleteAfterExtract": true,
+    "OneShot": true
+  },
+  {
+    "UpdateStageName": "Flatten",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Command",
+    "UpdateSourceArgs": "mv ./ksp-luna/serverfiles/LMPServer/* ./ksp-luna/serverfiles/ && rm -rf ./ksp-luna/serverfiles/LMPServer",
+    "OneShot": true
+  },
+  {
+    "UpdateStageName": "MakeExecutable",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Command",
+    "UpdateSourceArgs": "chmod +x ./ksp-luna/serverfiles/Server",
     "OneShot": true
   }
 ]
