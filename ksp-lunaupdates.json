@@ -1,26 +1,13 @@
 [
-    {
-        "UpdateStageName": "GithubRelease",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "GithubRelease",
-        "UpdateSourceData": "LunaMultiplayer-Server-Release.zip",
-        "UpdateSourceArgs": "LunaMultiplayer/LunaMultiplayer",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
-    },
-    {
-        "UpdateStageName": "Extract Zip",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "ExtractArchive",
-        "UpdateSourceArgs": "./LunaMultiplayer-Server-Release.zip",
-        "UpdateSourceTarget": "./",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "UpdateSourceConditionSetting": "GitHubDownload",
-        "UpdateSourceConditionValue": "true",
-        "DeleteAfterExtract": true,
-        "OneShot": false
-    }
+  {
+    "UpdateStageName": "GithubRelease",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "GithubRelease",
+    "UpdateSourceData": "LunaMultiplayer-Server-linux-x64.zip",
+    "UpdateSourceArgs": "LunaMultiplayer/LunaMultiplayer",
+    "UnzipUpdateSource": true,
+    "OverwriteExistingFiles": true,
+    "DeleteAfterExtract": true,
+    "OneShot": false
+  }
 ]
