@@ -1,10 +1,9 @@
 [
   {
-    "UpdateStageName": "GithubRelease",
+    "UpdateStageName": "Download",
     "UpdateSourcePlatform": "Linux",
-    "UpdateSource": "GithubRelease",
-    "UpdateSourceData": "LunaMultiplayer-Server-linux-x64.zip",
-    "UpdateSourceArgs": "LunaMultiplayer/LunaMultiplayer",
+    "UpdateSource": "FileDownload",
+    "UpdateSourceData": "https://github.com/LunaMultiplayer/LunaMultiplayer/releases/download/0.29.0-Draft/LunaMultiplayer-Server-linux-x64-Release.zip",
     "UnzipUpdateSource": true,
     "OverwriteExistingFiles": true,
     "DeleteAfterExtract": true,
