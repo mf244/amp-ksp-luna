@@ -5,7 +5,7 @@
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://github.com/LunaMultiplayer/LunaMultiplayer/releases/download/0.29.0-Draft/LunaMultiplayer-Server-linux-x64-Release.zip",
         "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": false,
+        "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
         "OneShot": false
     }
