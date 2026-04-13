@@ -11,13 +11,14 @@
         "OneShot": true
     },
     {
-        "UpdateStageName": "DEBUG",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "pwd && ls",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
-    }
+    "UpdateStageName": "DEBUG",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "bash",
+    "UpdateSourceArgs": "-lc \"pwd; ls -la; find . -maxdepth 3 -type f | sort\"",
+    "UnzipUpdateSource": false,
+    "OverwriteExistingFiles": false,
+    "DeleteAfterExtract": true,
+    "OneShot": false
+}
 ]
