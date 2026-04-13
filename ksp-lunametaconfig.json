@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "Config/MasterServerSettings.xml",
+        "ConfigFile": "LMPServer/Config/MasterServerSettings.xml",
         "ConfigType": "xml",
         "AutoMap": true
     }
