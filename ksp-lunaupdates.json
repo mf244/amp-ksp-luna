@@ -1,56 +1,13 @@
 [
-  {
-    "UpdateStageName": "Download Dotnet Installer",
-    "UpdateSourcePlatform": "Linux",
-    "UpdateSource": "FetchURL",
-    "UpdateSourceData": "https://dot.net/v1/dotnet-install.sh",
-    "UpdateSourceTarget": "./",
-    "UnzipUpdateSource": false,
-    "OverwriteExistingFiles": true,
-    "DeleteAfterExtract": false,
-    "OneShot": true
-  },
-  {
-    "UpdateStageName": "Make Dotnet Installer Executable",
-    "UpdateSourcePlatform": "Linux",
-    "UpdateSource": "SetExecutableFlag",
-    "UpdateSourceArgs": "./dotnet-install.sh",
-    "UnzipUpdateSource": false,
-    "OverwriteExistingFiles": false,
-    "DeleteAfterExtract": false,
-    "OneShot": true
-  },
-  {
-    "UpdateStageName": "Install Local Dotnet",
-    "UpdateSourcePlatform": "Linux",
-    "UpdateSource": "Executable",
-    "UpdateSourceData": "./dotnet-install.sh",
-    "UpdateSourceArgs": "--runtime dotnet --version 6.0.36 --install-dir ./.dotnet",
-    "UnzipUpdateSource": false,
-    "OverwriteExistingFiles": false,
-    "DeleteAfterExtract": false,
-    "OneShot": true
-  },
-  {
-    "UpdateStageName": "Download Latest Build",
-    "UpdateSourcePlatform": "All",
-    "UpdateSource": "GithubRelease",
-    "UpdateSourceData": "LunaMultiplayer-Server-Release.zip",
-    "UpdateSourceArgs": "LunaMultiplayer/LunaMultiplayer",
-    "UnzipUpdateSource": false,
-    "OverwriteExistingFiles": true,
-    "DeleteAfterExtract": false,
-    "OneShot": false
-  },
-  {
-    "UpdateStageName": "Extract",
-    "UpdateSourcePlatform": "All",
-    "UpdateSource": "ExtractArchive",
-    "UpdateSourceData": "./LunaMultiplayer-Server-Release.zip",
-    "UpdateSourceTarget": "./",
-    "UnzipUpdateSource": false,
-    "OverwriteExistingFiles": true,
-    "DeleteAfterExtract": true,
-    "OneShot": false
-  }
+    {
+        "UpdateStageName": "Get Nightly",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://github.com/LunaMultiplayer/LunaMultiplayer/releases/download/0.29.0-Draft/LunaMultiplayer-Server-linux-x64-Release.zip",
+        "UpdateSourceTarget": "./",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true,
+        "OneShot": true
+    }
 ]
