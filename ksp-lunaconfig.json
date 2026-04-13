@@ -6,8 +6,8 @@
     "Keywords": "master server register public list",
     "FieldName": "RegisterWithMasterServer",
     "InputType": "checkbox",
-    "DefaultValue": "true",
-    "ParamFieldName": "RegisterWithMasterServer",
+    "DefaultValue": "false",
+    "ParamFieldName": "MasterServerSettingsDefinition.RegisterWithMasterServer",
     "IncludeInCommandLine": false
   },
   {
@@ -18,7 +18,7 @@
     "FieldName": "MasterServerRegistrationMsInterval",
     "InputType": "number",
     "DefaultValue": "5000",
-    "ParamFieldName": "MasterServerRegistrationMsInterval",
+    "ParamFieldName": "MasterServerSettingsDefinition.MasterServerRegistrationMsInterval",
     "IncludeInCommandLine": false
   }
 ]
