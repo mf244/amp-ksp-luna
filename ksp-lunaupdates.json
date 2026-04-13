@@ -11,13 +11,13 @@
         "OneShot": true
     },
     {
-        "UpdateStageName": "Make Executable",
+        "UpdateStageName": "DEBUG",
         "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "SetExecutableFlag",
-        "UpdateSourceArgs": "./LMPServer/Server",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "pwd && ls",
         "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": false,
-        "OneShot": true
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
     }
 ]
