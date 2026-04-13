@@ -1,25 +1,34 @@
 [
-  {
-    "UpdateStageName": "Download",
-    "UpdateSourcePlatform": "Linux",
-    "UpdateSource": "FetchURL",
-    "UpdateSourceData": "https://github.com/LunaMultiplayer/LunaMultiplayer/releases/download/0.29.0-Draft/LunaMultiplayer-Server-linux-x64-Release.zip",
-    "UpdateSourceArgs": "",
-    "UnzipUpdateSource": false,
-    "OverwriteExistingFiles": true,
-    "DeleteAfterExtract": false,
-    "OneShot": true
-  },
-  {
-    "UpdateStageName": "Extract",
-    "UpdateSourcePlatform": "Linux",
-    "UpdateSource": "ExtractArchive",
-    "UpdateSourceData": "./LunaMultiplayer-Server-linux-x64-Release.zip",
-    "UpdateSourceArgs": "",
-    "UpdateSourceTarget": "./serverfiles/",
-    "UnzipUpdateSource": false,
-    "OverwriteExistingFiles": true,
-    "DeleteAfterExtract": true,
-    "OneShot": true
-  }
+    {
+        "UpdateStageName": "Download Latest Linux Nightly",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceData": "LunaMultiplayer-Server-linux-x64-Release.zip",
+        "UpdateSourceArgs": "LunaMultiplayer/LunaMultiplayer",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "Extract Luna Server",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceArgs": "./LunaMultiplayer-Server-linux-x64-Release.zip",
+        "UpdateSourceTarget": "./serverfiles/",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "Make Server Executable",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "SetExecutableFlag",
+        "UpdateSourceArgs": "./serverfiles/LMPServer/Server",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    }
 ]
