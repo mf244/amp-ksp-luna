@@ -1,8 +1,8 @@
 [
-    {
-        "ConfigFile": "LMPServer/Config/MasterServerSettings.xml",
-        "ConfigType": "xml",
-        "AutoMap": true,
-        "Importable": true
-    }
+  {
+    "ConfigFile": "LMPServer/Config/MasterServerSettings.xml",
+    "ConfigType": "xml",
+    "Importable": true,
+    "AutoMap": false
+  }
 ]
