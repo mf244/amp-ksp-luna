@@ -11,14 +11,14 @@
         "OneShot": true
     },
     {
-    "UpdateStageName": "Make Executable",
-    "UpdateSourcePlatform": "Linux",
-    "UpdateSource": "Executable",
-    "UpdateSourceData": "bash",
-    "UpdateSourceArgs": "-lc \"chmod +x ./LMPServer/Server || chmod +x ./serverfiles/LMPServer/Server\"",
-    "UnzipUpdateSource": false,
-    "OverwriteExistingFiles": false,
-    "DeleteAfterExtract": false,
-    "OneShot": true
+        "UpdateStageName": "Find Server File",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "bash",
+        "UpdateSourceArgs": "-lc \"pwd; echo '---'; ls -la; echo '---'; find . \\( -name 'Server' -o -name 'Server.dll' -o -iname '*lmp*' \\) | sort\"",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": false,
+        "OneShot": false
     }
 ]
