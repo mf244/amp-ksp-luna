@@ -14,10 +14,10 @@
         "UpdateStageName": "Make Executable",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "SetExecutableFlag",
-        "UpdateSourceArgs": "LMPServer/Server",
+        "UpdateSourceArgs": "./LMPServer/Server",
         "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": false,
         "OneShot": true
     }
 ]
