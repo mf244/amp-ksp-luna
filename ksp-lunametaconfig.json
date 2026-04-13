@@ -1,1 +1,7 @@
-[]
+[
+    {
+        "ConfigFile": "Config/MasterServerSettings.xml",
+        "ConfigType": "xml",
+        "AutoMap": true
+    }
+]
