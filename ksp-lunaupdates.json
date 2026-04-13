@@ -1,23 +1,44 @@
 [
     {
-        "UpdateStageName": "Download Linux Server",
+        "UpdateStageName": "Install Dotnet",
         "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/LunaMultiplayer/LunaMultiplayer/releases/download/0.29.0-Draft/LunaMultiplayer-Server-linux-x64-Release.zip",
-        "UpdateSourceTarget": "./",
-        "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "bash -lc 'set -e; if ! command -v dotnet >/dev/null 2>&1; then \\   apt-get update -y && \\   apt-get install -y wget apt-transport-https ca-certificates gnupg && \\   wget https://packages.microsoft.com/config/ubuntu/$(. /etc/os-release; echo $VERSION_ID)/packages-microsoft-prod.deb -O /tmp/microsoft-prod.deb && \\   dpkg -i /tmp/microsoft-prod.deb && \\   apt-get update -y && \\   apt-get install -y dotnet-runtime-6.0; \\ fi'",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
         "OneShot": true
+    },
+    {
+        "UpdateStageName": "Download Latest Build",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceData": "LunaMultiplayer-Server-Release.zip",
+        "UpdateSourceArgs": "LunaMultiplayer/LunaMultiplayer",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "Extract",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceArgs": "./LunaMultiplayer-Server-Release.zip",
+        "UpdateSourceTarget": "./",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
     },
     {
         "UpdateStageName": "Make Executable",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "SetExecutableFlag",
-        "UpdateSourceArgs": "./serverfiles/LMPServer/Server",
+        "UpdateSourceArgs": "./LMPServer/Server",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
-        "OneShot": true
+        "OneShot": false
     }
 ]
