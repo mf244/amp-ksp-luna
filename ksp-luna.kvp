@@ -10,7 +10,7 @@ Meta.ContainerPolicy=Supported
 Meta.ContainerPolicyReason=
 Meta.Prerequsites=[]
 Meta.EndpointURIFormat=steam://connect/{ip}:{GenericModule.App.Ports.$SteamQueryPort}
-Meta.AppConfigId=90d5a8bf-684d-47eb-bfd7-fee22d7f0220
+Meta.AppConfigId=63a4f736-e572-4a27-953d-7844b5b61646
 App.AdminMethod=STDIO
 App.HasReadableConsole=true
 App.HasWritableConsole=true
@@ -73,7 +73,7 @@ Meta.ConfigManifest=ksp-lunaconfig.json
 Meta.MetaConfigManifest=ksp-lunametaconfig.json
 Meta.ConfigRoot=ksp-luna.kvp
 App.RootDir=./ksp-luna/
-Meta.DisplayImageSource=url:https://www.reddit.com/media?url=https%3A%2F%2Fexternal-preview.redd.it%2Fanother-take-on-the-ksp-logo-v0-yN5eOI_P6Q4zWxV4YGl3taL0rEQDL-8blU2E_2JXMLE.jpg%3Fauto%3Dwebp%26s%3D3e99e1ce42251440777314fc035c2b0dc7682026
+Meta.DisplayImageSource=url:https://upload.wikimedia.org/wikipedia/en/e/e7/Kerbal_Space_Program_High_Res_Logo.png
 App.BaseDirectory=./ksp-luna/serverfiles/
 App.WorkingDir=serverfiles
 App.ExecutableWin=serverfiles\
