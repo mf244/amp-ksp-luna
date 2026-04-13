@@ -2,6 +2,7 @@
     {
         "ConfigFile": "LMPServer/Config/MasterServerSettings.xml",
         "ConfigType": "xml",
-        "AutoMap": true
+        "AutoMap": true,
+        "Importable": true
     }
 ]
