@@ -1,8 +1,1 @@
-[
-  {
-    "ConfigFile": "LMPServer/Config/MasterServerSettings.xml",
-    "ConfigType": "xml",
-    "Importable": true,
-    "AutoMap": false
-  }
-]
+[]
